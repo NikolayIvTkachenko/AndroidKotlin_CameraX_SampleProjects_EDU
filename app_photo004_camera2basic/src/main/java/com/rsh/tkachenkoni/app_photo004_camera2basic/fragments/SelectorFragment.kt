@@ -1,6 +1,6 @@
 package com.rsh.tkachenkoni.app_photo004_camera2basic.fragments
 
-import android.R
+import com.rsh.tkachenkoni.app_photo004_camera2basic.R
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.ImageFormat
@@ -44,7 +44,7 @@ class SelectorFragment : Fragment() {
 
             val layoutId = android.R.layout.simple_list_item_1
             adapter = GenericListAdapter(cameraList, itemLayoutId = layoutId) { view, item, _ ->
-                view.findViewById<TextView>(R.id.text1).text = item.title
+                view.findViewById<TextView>(android.R.id.text1).text = item.title
                 view.setOnClickListener {
                     Navigation.findNavController(requireActivity(), R.id.fragment_container)
                         .navigate(SelectorFragmentDirections.actionSelectorToCamera(
