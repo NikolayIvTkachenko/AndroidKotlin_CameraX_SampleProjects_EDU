@@ -1,0 +1,6 @@
+rootProject.name = "SamplePhotoCameraX002"
+include ':app'
+include ':app_photo002'
+include ':app_photo003_camerax'
+include ':app_photo004_camera2basic'
+include ':app_photo005_camerax_full'
